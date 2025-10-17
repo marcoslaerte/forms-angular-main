@@ -74,3 +74,10 @@
   line-height: 18px;
   color: var(--vermelho);
 }
+
+/* se os campos de Input receberem essas classes, a borda e a letra devem ficar vermelhas.
+O Formulário form também recebe essas classes, porém ele não vai ficar vermelho por causa do not*/
+.ng-touched.ng-invalid:not(form) {
+  border-color: red;
+  color: red;
+}
